@@ -1,7 +1,6 @@
 const inputEl = document.getElementById('validation-input');
-console.log(getAttribute(data-length));
 inputEl.addEventListener('blur', () => {
-    if (inputEl.value.length === getAttribute(length)) {
+    if (inputEl.value.length == inputEl.dataset.length) {
     inputEl.classList.add('valid')
     inputEl.classList.remove('invalid')
 
